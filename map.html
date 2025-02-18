@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_261add2dcb50b23e0def072b4b038cbc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_261add2dcb50b23e0def072b4b038cbc" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_261add2dcb50b23e0def072b4b038cbc = L.map(
+                "map_261add2dcb50b23e0def072b4b038cbc",
+                {
+                    center: [47.0, 13.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fe2410153e0fbeebb202fcd5cab5df84 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_261add2dcb50b23e0def072b4b038cbc);
+        
+    
+            var marker_073a1f1e096345a154a621cbd1ef6534 = L.marker(
+                [46.969, 11.01],
+                {}
+            ).addTo(map_261add2dcb50b23e0def072b4b038cbc);
+        
+    
+            var icon_baea59dd63ecc9ae020d51a7c46b2ba9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_073a1f1e096345a154a621cbd1ef6534.setIcon(icon_baea59dd63ecc9ae020d51a7c46b2ba9);
+        
+    
+        var popup_bb1726fce4370ae24166f1364a4afcfe = L.popup({"maxWidth": 300});
+
+        
+            var html_18c42f409179fc6a9312cb9a11a59e68 = $(`<div id="html_18c42f409179fc6a9312cb9a11a59e68" style="width: 100.0%; height: 100.0%;">     <b>Sölden</b><br>     <b>Nadmořská výška:</b> 1 350 - 3 340 m<br>     <b>Aktuální sněhová pokrývka:</b> 33 - 45 cm<br>     <b>Počet km sjezdovek:</b> 144 km<br>     <b>Počet vleků:</b> 33 (9/16/8)<br>     <b>Cena jednodenního skipasu:</b> 63 - 67 €<br>     <b>Web:</b> <a href='https://www.soelden.com/' target='_blank'>https://www.soelden.com/</a>     </div>`)[0];
+            popup_bb1726fce4370ae24166f1364a4afcfe.setContent(html_18c42f409179fc6a9312cb9a11a59e68);
+        
+
+        marker_073a1f1e096345a154a621cbd1ef6534.bindPopup(popup_bb1726fce4370ae24166f1364a4afcfe)
+        ;
+
+        
+    
+    
+            var marker_12b9ef17926b04332d5c464ca6fd1cab = L.marker(
+                [47.012, 10.291],
+                {}
+            ).addTo(map_261add2dcb50b23e0def072b4b038cbc);
+        
+    
+            var icon_3f50f1af8f129aa56e2246082c55e913 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_12b9ef17926b04332d5c464ca6fd1cab.setIcon(icon_3f50f1af8f129aa56e2246082c55e913);
+        
+    
+        var popup_95d6fd9b717a208c30af76c09e34ec99 = L.popup({"maxWidth": 300});
+
+        
+            var html_198f56d064279c615a5a95441b62aa50 = $(`<div id="html_198f56d064279c615a5a95441b62aa50" style="width: 100.0%; height: 100.0%;">     <b>Ischgl</b><br>     <b>Nadmořská výška:</b> 1 377 - 2 872 m<br>     <b>Aktuální sněhová pokrývka:</b> 70 - 105 cm<br>     <b>Počet km sjezdovek:</b> 239 km<br>     <b>Počet vleků:</b> 45 (13/25/7)<br>     <b>Cena jednodenního skipasu:</b> 70 - 75 €<br>     <b>Web:</b> <a href='https://www.ischgl.com/' target='_blank'>https://www.ischgl.com/</a>     </div>`)[0];
+            popup_95d6fd9b717a208c30af76c09e34ec99.setContent(html_198f56d064279c615a5a95441b62aa50);
+        
+
+        marker_12b9ef17926b04332d5c464ca6fd1cab.bindPopup(popup_95d6fd9b717a208c30af76c09e34ec99)
+        ;
+
+        
+    
+    
+            var marker_dc9f165bf69040e99faa65a2c4471027 = L.marker(
+                [47.391, 12.636],
+                {}
+            ).addTo(map_261add2dcb50b23e0def072b4b038cbc);
+        
+    
+            var icon_b183be783786f5518d8866771533b88a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dc9f165bf69040e99faa65a2c4471027.setIcon(icon_b183be783786f5518d8866771533b88a);
+        
+    
+        var popup_c25428642b24047f27bcce4d02b3d478 = L.popup({"maxWidth": 300});
+
+        
+            var html_4add7b48c0c5a5121e4ab425c04c2c3d = $(`<div id="html_4add7b48c0c5a5121e4ab425c04c2c3d" style="width: 100.0%; height: 100.0%;">     <b>Saalbach-Hinterglemm</b><br>     <b>Nadmořská výška:</b> 1 003 - 2 100 m<br>     <b>Aktuální sněhová pokrývka:</b> 40 - 70 cm<br>     <b>Počet km sjezdovek:</b> 270 km<br>     <b>Počet vleků:</b> 70 (28/22/20)<br>     <b>Cena jednodenního skipasu:</b> 60 - 65 €<br>     <b>Web:</b> <a href='https://www.saalbach.com/' target='_blank'>https://www.saalbach.com/</a>     </div>`)[0];
+            popup_c25428642b24047f27bcce4d02b3d478.setContent(html_4add7b48c0c5a5121e4ab425c04c2c3d);
+        
+
+        marker_dc9f165bf69040e99faa65a2c4471027.bindPopup(popup_c25428642b24047f27bcce4d02b3d478)
+        ;
+
+        
+    
+    
+            var marker_fd62ecd729707e824f80203bc038aa58 = L.marker(
+                [47.446, 12.392],
+                {}
+            ).addTo(map_261add2dcb50b23e0def072b4b038cbc);
+        
+    
+            var icon_5b41961e4f7a927ff27936eef2d05f5a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fd62ecd729707e824f80203bc038aa58.setIcon(icon_5b41961e4f7a927ff27936eef2d05f5a);
+        
+    
+        var popup_18fd9df9cf61875067ae3abfcff803e8 = L.popup({"maxWidth": 300});
+
+        
+            var html_a6072f3a2ac904865bf2b9e3cda6bfd1 = $(`<div id="html_a6072f3a2ac904865bf2b9e3cda6bfd1" style="width: 100.0%; height: 100.0%;">     <b>Kitzbühel</b><br>     <b>Nadmořská výška:</b> 800 - 2 000 m<br>     <b>Aktuální sněhová pokrývka:</b> 33 - 51 cm<br>     <b>Počet km sjezdovek:</b> 234 km<br>     <b>Počet vleků:</b> 57 (11/28/18)<br>     <b>Cena jednodenního skipasu:</b> 59 - 64 €<br>     <b>Web:</b> <a href='https://www.kitzski.at/' target='_blank'>https://www.kitzski.at/</a>     </div>`)[0];
+            popup_18fd9df9cf61875067ae3abfcff803e8.setContent(html_a6072f3a2ac904865bf2b9e3cda6bfd1);
+        
+
+        marker_fd62ecd729707e824f80203bc038aa58.bindPopup(popup_18fd9df9cf61875067ae3abfcff803e8)
+        ;
+
+        
+    
+    
+            var marker_c714454c422c559d913ca5951b753d69 = L.marker(
+                [47.169, 11.865],
+                {}
+            ).addTo(map_261add2dcb50b23e0def072b4b038cbc);
+        
+    
+            var icon_4a76ce6f2cb20b10f5e3e0b2d2702ee2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c714454c422c559d913ca5951b753d69.setIcon(icon_4a76ce6f2cb20b10f5e3e0b2d2702ee2);
+        
+    
+        var popup_6a3598d2e3c0c7d4dedcd8a4f4495d64 = L.popup({"maxWidth": 300});
+
+        
+            var html_62bde6f9eb2ae31789236cfe6212c267 = $(`<div id="html_62bde6f9eb2ae31789236cfe6212c267" style="width: 100.0%; height: 100.0%;">     <b>Mayrhofen</b><br>     <b>Nadmořská výška:</b> 630 - 2 500 m<br>     <b>Aktuální sněhová pokrývka:</b> 36 - 53 cm<br>     <b>Počet km sjezdovek:</b> 142 km<br>     <b>Počet vleků:</b> 45 (18/17/10)<br>     <b>Cena jednodenního skipasu:</b> 58 - 63 €<br>     <b>Web:</b> <a href='https://www.mayrhofen.at/' target='_blank'>https://www.mayrhofen.at/</a>     </div>`)[0];
+            popup_6a3598d2e3c0c7d4dedcd8a4f4495d64.setContent(html_62bde6f9eb2ae31789236cfe6212c267);
+        
+
+        marker_c714454c422c559d913ca5951b753d69.bindPopup(popup_6a3598d2e3c0c7d4dedcd8a4f4495d64)
+        ;
+
+        
+    
+    
+            var marker_3d2164345a2d629a443bc18451b890e8 = L.marker(
+                [47.393, 13.692],
+                {}
+            ).addTo(map_261add2dcb50b23e0def072b4b038cbc);
+        
+    
+            var icon_938dcfe14bda693b4cda1bda8a536b41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3d2164345a2d629a443bc18451b890e8.setIcon(icon_938dcfe14bda693b4cda1bda8a536b41);
+        
+    
+        var popup_7d480b64cee801dcfb01e8f76fbe4900 = L.popup({"maxWidth": 300});
+
+        
+            var html_9426e46374a80d6053e031d1805da04b = $(`<div id="html_9426e46374a80d6053e031d1805da04b" style="width: 100.0%; height: 100.0%;">     <b>Schladming-Dachstein</b><br>     <b>Nadmořská výška:</b> 745 - 2 700 m<br>     <b>Aktuální sněhová pokrývka:</b> 28 - 51 cm<br>     <b>Počet km sjezdovek:</b> 230 km<br>     <b>Počet vleků:</b> 81 (12/47/22)<br>     <b>Cena jednodenního skipasu:</b> 55 - 60 €<br>     <b>Web:</b> <a href='https://www.schladming-dachstein.at/' target='_blank'>https://www.schladming-dachstein.at/</a>     </div>`)[0];
+            popup_7d480b64cee801dcfb01e8f76fbe4900.setContent(html_9426e46374a80d6053e031d1805da04b);
+        
+
+        marker_3d2164345a2d629a443bc18451b890e8.bindPopup(popup_7d480b64cee801dcfb01e8f76fbe4900)
+        ;
+
+        
+    
+    
+            var marker_41ad0086696cc21f00c5e9eedc2b92ed = L.marker(
+                [47.324, 12.798],
+                {}
+            ).addTo(map_261add2dcb50b23e0def072b4b038cbc);
+        
+    
+            var icon_23571259b239c274c3bd16ff9a7cf47b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_41ad0086696cc21f00c5e9eedc2b92ed.setIcon(icon_23571259b239c274c3bd16ff9a7cf47b);
+        
+    
+        var popup_f4010e045959742db2c8a8e695daaf1b = L.popup({"maxWidth": 300});
+
+        
+            var html_98cc3ead2325f25a90ce92b900e43946 = $(`<div id="html_98cc3ead2325f25a90ce92b900e43946" style="width: 100.0%; height: 100.0%;">     <b>Zell am See-Kaprun</b><br>     <b>Nadmořská výška:</b> 750 - 3 029 m<br>     <b>Aktuální sněhová pokrývka:</b> 33 - 48 cm<br>     <b>Počet km sjezdovek:</b> 138 km<br>     <b>Počet vleků:</b> 47 (15/17/15)<br>     <b>Cena jednodenního skipasu:</b> 57 - 62 €<br>     <b>Web:</b> <a href='https://www.zellamsee-kaprun.com/' target='_blank'>https://www.zellamsee-kaprun.com/</a>     </div>`)[0];
+            popup_f4010e045959742db2c8a8e695daaf1b.setContent(html_98cc3ead2325f25a90ce92b900e43946);
+        
+
+        marker_41ad0086696cc21f00c5e9eedc2b92ed.bindPopup(popup_f4010e045959742db2c8a8e695daaf1b)
+        ;
+
+        
+    
+    
+            var marker_8cfb41476d7b9658d0c2e4a07904a989 = L.marker(
+                [47.131, 10.264],
+                {}
+            ).addTo(map_261add2dcb50b23e0def072b4b038cbc);
+        
+    
+            var icon_7d28ffbb077d3e6fda7bbadd364c898b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8cfb41476d7b9658d0c2e4a07904a989.setIcon(icon_7d28ffbb077d3e6fda7bbadd364c898b);
+        
+    
+        var popup_2283700e35c3b979780dc92e7de02c91 = L.popup({"maxWidth": 300});
+
+        
+            var html_80561d1426bc00dd6a4678f5b4385039 = $(`<div id="html_80561d1426bc00dd6a4678f5b4385039" style="width: 100.0%; height: 100.0%;">     <b>St. Anton am Arlberg</b><br>     <b>Nadmořská výška:</b> 1 304 - 2 811 m<br>     <b>Aktuální sněhová pokrývka:</b> 35 - 49 cm<br>     <b>Počet km sjezdovek:</b> 305 km<br>     <b>Počet vleků:</b> 88 (15/45/28)<br>     <b>Cena jednodenního skipasu:</b> 70 - 75 €<br>     <b>Web:</b> <a href='https://www.stantonamarlberg.com/' target='_blank'>https://www.stantonamarlberg.com/</a>     </div>`)[0];
+            popup_2283700e35c3b979780dc92e7de02c91.setContent(html_80561d1426bc00dd6a4678f5b4385039);
+        
+
+        marker_8cfb41476d7b9658d0c2e4a07904a989.bindPopup(popup_2283700e35c3b979780dc92e7de02c91)
+        ;
+
+        
+    
+    
+            var marker_331830efc5ec3df9fbb1ca2645c3632c = L.marker(
+                [47.211, 10.142],
+                {}
+            ).addTo(map_261add2dcb50b23e0def072b4b038cbc);
+        
+    
+            var icon_056dee6dd6aabba24f798eef4e671c9a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_331830efc5ec3df9fbb1ca2645c3632c.setIcon(icon_056dee6dd6aabba24f798eef4e671c9a);
+        
+    
+        var popup_204bd0d43b34f152c92050baf2951acd = L.popup({"maxWidth": 300});
+
+        
+            var html_0309d31f69ab481ad6331b28e12b635b = $(`<div id="html_0309d31f69ab481ad6331b28e12b635b" style="width: 100.0%; height: 100.0%;">     <b>Lech Zürs am Arlberg</b><br>     <b>Nadmořská výška:</b> 1 450 - 2 450 m<br>     <b>Aktuální sněhová pokrývka:</b> 31 - 48 cm<br>     <b>Počet km sjezdovek:</b> 305 km<br>     <b>Počet vleků:</b> 88 (15/45/28)<br>     <b>Cena jednodenního skipasu:</b> 70 - 75 €<br>     <b>Web:</b> <a href='https://www.lechzuers.com/' target='_blank'>https://www.lechzuers.com/</a>     </div>`)[0];
+            popup_204bd0d43b34f152c92050baf2951acd.setContent(html_0309d31f69ab481ad6331b28e12b635b);
+        
+
+        marker_331830efc5ec3df9fbb1ca2645c3632c.bindPopup(popup_204bd0d43b34f152c92050baf2951acd)
+        ;
+
+        
+    
+    
+            var marker_791b38115b68ea0d660c964c01df1421 = L.marker(
+                [47.241, 13.56],
+                {}
+            ).addTo(map_261add2dcb50b23e0def072b4b038cbc);
+        
+    
+            var icon_7849efdc2769a047f27be178a56c0d8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_791b38115b68ea0d660c964c01df1421.setIcon(icon_7849efdc2769a047f27be178a56c0d8d);
+        
+    
+        var popup_7fd8628e4968b2d1c2ba2c0121b1f5f4 = L.popup({"maxWidth": 300});
+
+        
+            var html_3c3bfbd4d6c7c964fd29993d91de2921 = $(`<div id="html_3c3bfbd4d6c7c964fd29993d91de2921" style="width: 100.0%; height: 100.0%;">     <b>Obertauern</b><br>     <b>Nadmořská výška:</b> 1 630 - 2 526 m<br>     <b>Aktuální sněhová pokrývka:</b> 26 - 33 cm<br>     <b>Počet km sjezdovek:</b> 100 km<br>     <b>Počet vleků:</b> 26 (6/9/11)<br>     <b>Cena jednodenního skipasu:</b> 55 - 60 €<br>     <b>Web:</b> <a href='https://www.obertauern.com/' target='_blank'>https://www.obertauern.com/</a>     </div>`)[0];
+            popup_7fd8628e4968b2d1c2ba2c0121b1f5f4.setContent(html_3c3bfbd4d6c7c964fd29993d91de2921);
+        
+
+        marker_791b38115b68ea0d660c964c01df1421.bindPopup(popup_7fd8628e4968b2d1c2ba2c0121b1f5f4)
+        ;
+
+        
+    
+    
+            var marker_7ea836b58ed2813a30ef7ac7c6f5eda9 = L.marker(
+                [46.566, 13.278],
+                {}
+            ).addTo(map_261add2dcb50b23e0def072b4b038cbc);
+        
+    
+            var icon_43e56d83bd7eef9a53a157c83834940e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7ea836b58ed2813a30ef7ac7c6f5eda9.setIcon(icon_43e56d83bd7eef9a53a157c83834940e);
+        
+    
+        var popup_39c4cd7c544738e9d79aea454ed727d0 = L.popup({"maxWidth": 300});
+
+        
+            var html_6e8a4e3084fbc0509b003c5f3cafb649 = $(`<div id="html_6e8a4e3084fbc0509b003c5f3cafb649" style="width: 100.0%; height: 100.0%;">     <b>Nassfeld</b><br>     <b>Nadmořská výška:</b> 610 - 2 002 m<br>     <b>Aktuální sněhová pokrývka:</b> 36 - 51 cm<br>     <b>Počet km sjezdovek:</b> 110 km<br>     <b>Počet vleků:</b> 30 (5/9/16)<br>     <b>Cena jednodenního skipasu:</b> 50 - 55 €<br>     <b>Web:</b> <a href='https://www.nassfeld.at/' target='_blank'>https://www.nassfeld.at/</a>     </div>`)[0];
+            popup_39c4cd7c544738e9d79aea454ed727d0.setContent(html_6e8a4e3084fbc0509b003c5f3cafb649);
+        
+
+        marker_7ea836b58ed2813a30ef7ac7c6f5eda9.bindPopup(popup_39c4cd7c544738e9d79aea454ed727d0)
+        ;
+
+        
+    
+    
+            var marker_2d3f8a6b8b429398bf40a1ff18002616 = L.marker(
+                [47.038, 10.604],
+                {}
+            ).addTo(map_261add2dcb50b23e0def072b4b038cbc);
+        
+    
+            var icon_1f73330b48d92f5a3b9bac0270fe0965 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2d3f8a6b8b429398bf40a1ff18002616.setIcon(icon_1f73330b48d92f5a3b9bac0270fe0965);
+        
+    
+        var popup_22991456a548858fd15ff163986bf1bf = L.popup({"maxWidth": 300});
+
+        
+            var html_0809d7dc8ca16b565d53ee1ca225b056 = $(`<div id="html_0809d7dc8ca16b565d53ee1ca225b056" style="width: 100.0%; height: 100.0%;">     <b>Serfaus-Fiss-Ladis</b><br>     <b>Nadmořská výška:</b> 1 200 - 2 820 m<br>     <b>Aktuální sněhová pokrývka:</b> 33 - 47 cm<br>     <b>Počet km sjezdovek:</b> 214 km<br>     <b>Počet vleků:</b> 68 (11/16/41)<br>     <b>Cena jednodenního skipasu:</b> 65 - 70 €<br>     <b>Web:</b> <a href='https://www.serfaus-fiss-ladis.at/' target='_blank'>https://www.serfaus-fiss-ladis.at/</a>     </div>`)[0];
+            popup_22991456a548858fd15ff163986bf1bf.setContent(html_0809d7dc8ca16b565d53ee1ca225b056);
+        
+
+        marker_2d3f8a6b8b429398bf40a1ff18002616.bindPopup(popup_22991456a548858fd15ff163986bf1bf)
+        ;
+
+        
+    
+    
+            var marker_2a92c9aed9c38b290d284297714868f9 = L.marker(
+                [46.984, 9.957],
+                {}
+            ).addTo(map_261add2dcb50b23e0def072b4b038cbc);
+        
+    
+            var icon_d5bca9e94fa7dab92a2441f5c27a62b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2a92c9aed9c38b290d284297714868f9.setIcon(icon_d5bca9e94fa7dab92a2441f5c27a62b4);
+        
+    
+        var popup_c05a6aed0ba8ccfeeea1759eefff1551 = L.popup({"maxWidth": 300});
+
+        
+            var html_cedd9831bef60d287d0b5286ec396c34 = $(`<div id="html_cedd9831bef60d287d0b5286ec396c34" style="width: 100.0%; height: 100.0%;">     <b>Silvretta Montafon</b><br>     <b>Nadmořská výška:</b> 700 - 2 430 m<br>     <b>Aktuální sněhová pokrývka:</b> 30 - 45 cm<br>     <b>Počet km sjezdovek:</b> 140 km<br>     <b>Počet vleků:</b> 35 (6/19/10)<br>     <b>Cena jednodenního skipasu:</b> 55 - 60 €<br>     <b>Web:</b> <a href='https://www.silvretta-montafon.at/' target='_blank'>https://www.silvretta-montafon.at/</a>     </div>`)[0];
+            popup_c05a6aed0ba8ccfeeea1759eefff1551.setContent(html_cedd9831bef60d287d0b5286ec396c34);
+        
+
+        marker_2a92c9aed9c38b290d284297714868f9.bindPopup(popup_c05a6aed0ba8ccfeeea1759eefff1551)
+        ;
+
+        
+    
+    
+            var marker_4fc06efbe499fb4d582a32ba80346bd9 = L.marker(
+                [47.041, 13.615],
+                {}
+            ).addTo(map_261add2dcb50b23e0def072b4b038cbc);
+        
+    
+            var icon_7bff0054880a6b1ffb7f12962d18ed18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4fc06efbe499fb4d582a32ba80346bd9.setIcon(icon_7bff0054880a6b1ffb7f12962d18ed18);
+        
+    
+        var popup_5189ad5607a58c235092f96217d35882 = L.popup({"maxWidth": 300});
+
+        
+            var html_39ac7e556dcbd148d864a9b762c6edd3 = $(`<div id="html_39ac7e556dcbd148d864a9b762c6edd3" style="width: 100.0%; height: 100.0%;">     <b>Katschberg</b><br>     <b>Nadmořská výška:</b> 1 066 - 2 220 m<br>     <b>Aktuální sněhová pokrývka:</b> 28 - 40 cm<br>     <b>Počet km sjezdovek:</b> 70 km<br>     <b>Počet vleků:</b> 16 (4/6/6)<br>     <b>Cena jednodenního skipasu:</b> 50 - 55 €<br>     <b>Web:</b> <a href='https://www.katschberg.at/' target='_blank'>https://www.katschberg.at/</a>     </div>`)[0];
+            popup_5189ad5607a58c235092f96217d35882.setContent(html_39ac7e556dcbd148d864a9b762c6edd3);
+        
+
+        marker_4fc06efbe499fb4d582a32ba80346bd9.bindPopup(popup_5189ad5607a58c235092f96217d35882)
+        ;
+
+        
+    
+    
+            var marker_b5a4ca2dd20417877d2a53f621dd12b1 = L.marker(
+                [47.114, 13.132],
+                {}
+            ).addTo(map_261add2dcb50b23e0def072b4b038cbc);
+        
+    
+            var icon_b2d5742cd70d29c64be3a674417eac31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b5a4ca2dd20417877d2a53f621dd12b1.setIcon(icon_b2d5742cd70d29c64be3a674417eac31);
+        
+    
+        var popup_a69c84928dc0957ca0d773c5ba674840 = L.popup({"maxWidth": 300});
+
+        
+            var html_c5a943fe827792d480f5da6cffbd71e1 = $(`<div id="html_c5a943fe827792d480f5da6cffbd71e1" style="width: 100.0%; height: 100.0%;">     <b>Bad Gastein</b><br>     <b>Nadmořská výška:</b> 1 000 - 2 700 m<br>     <b>Aktuální sněhová pokrývka:</b> 26 - 47 cm<br>     <b>Počet km sjezdovek:</b> 208 km<br>     <b>Počet vleků:</b> 45 (12/18/15)<br>     <b>Cena jednodenního skipasu:</b> 60 - 65 €<br>     <b>Web:</b> <a href='https://www.badgastein.com/' target='_blank'>https://www.badgastein.com/</a>     </div>`)[0];
+            popup_a69c84928dc0957ca0d773c5ba674840.setContent(html_c5a943fe827792d480f5da6cffbd71e1);
+        
+
+        marker_b5a4ca2dd20417877d2a53f621dd12b1.bindPopup(popup_a69c84928dc0957ca0d773c5ba674840)
+        ;
+
+        
+    
+    
+            var marker_154dc18808fafed012fda638e19ed602 = L.marker(
+                [47.291, 11.82],
+                {}
+            ).addTo(map_261add2dcb50b23e0def072b4b038cbc);
+        
+    
+            var icon_52d3f527dc26ac39d6f817ce4cf77cf1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_154dc18808fafed012fda638e19ed602.setIcon(icon_52d3f527dc26ac39d6f817ce4cf77cf1);
+        
+    
+        var popup_5872c5ba12d4116b19e0cd520ba6fc39 = L.popup({"maxWidth": 300});
+
+        
+            var html_c90cdce2a59112728386d042808dec4c = $(`<div id="html_c90cdce2a59112728386d042808dec4c" style="width: 100.0%; height: 100.0%;">     <b>Hochzillertal-Hochfügen</b><br>     <b>Nadmořská výška:</b> 600 - 2 500 m<br>     <b>Aktuální sněhová pokrývka:</b> 70 - 105 cm<br>     <b>Počet km sjezdovek:</b> 89 km<br>     <b>Počet vleků:</b> 39 (12/18/9)<br>     <b>Cena jednodenního skipasu:</b> 58 - 63 €<br>     <b>Web:</b> <a href='https://www.hochzillertal.com/' target='_blank'>https://www.hochzillertal.com/</a>     </div>`)[0];
+            popup_5872c5ba12d4116b19e0cd520ba6fc39.setContent(html_c90cdce2a59112728386d042808dec4c);
+        
+
+        marker_154dc18808fafed012fda638e19ed602.bindPopup(popup_5872c5ba12d4116b19e0cd520ba6fc39)
+        ;
+
+        
+    
+    
+            var marker_d772f87f1f0729d8f63e1aaabf827861 = L.marker(
+                [47.216, 12.045],
+                {}
+            ).addTo(map_261add2dcb50b23e0def072b4b038cbc);
+        
+    
+            var icon_f1c6704d32841d2fb921889b04aefaf8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d772f87f1f0729d8f63e1aaabf827861.setIcon(icon_f1c6704d32841d2fb921889b04aefaf8);
+        
+    
+        var popup_cc29acff2fe88cf390d01704225ab789 = L.popup({"maxWidth": 300});
+
+        
+            var html_33c11c536a26c437afc29510ddfca0bc = $(`<div id="html_33c11c536a26c437afc29510ddfca0bc" style="width: 100.0%; height: 100.0%;">     <b>Zillertal Arena</b><br>     <b>Nadmořská výška:</b> 580 - 2 500 m<br>     <b>Aktuální sněhová pokrývka:</b> 70 - 105 cm<br>     <b>Počet km sjezdovek:</b> 143 km<br>     <b>Počet vleků:</b> 52 (12/28/12)<br>     <b>Cena jednodenního skipasu:</b> 58 - 63 €<br>     <b>Web:</b> <a href='https://www.zillertalarena.com/' target='_blank'>https://www.zillertalarena.com/</a>     </div>`)[0];
+            popup_cc29acff2fe88cf390d01704225ab789.setContent(html_33c11c536a26c437afc29510ddfca0bc);
+        
+
+        marker_d772f87f1f0729d8f63e1aaabf827861.bindPopup(popup_cc29acff2fe88cf390d01704225ab789)
+        ;
+
+        
+    
+    
+            var marker_136bf434799d6004e64f6c818209ccfc = L.marker(
+                [47.066, 11.66],
+                {}
+            ).addTo(map_261add2dcb50b23e0def072b4b038cbc);
+        
+    
+            var icon_766428c3a2baa28aeb0f4a2147385836 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_136bf434799d6004e64f6c818209ccfc.setIcon(icon_766428c3a2baa28aeb0f4a2147385836);
+        
+    
+        var popup_43c7cd62530db7de59c7aeb549072fb3 = L.popup({"maxWidth": 300});
+
+        
+            var html_50f1a55c2439d49f635575c0ae0e4789 = $(`<div id="html_50f1a55c2439d49f635575c0ae0e4789" style="width: 100.0%; height: 100.0%;">     <b>Hintertuxer Gletscher</b><br>     <b>Nadmořská výška:</b> 1 500 - 3 250 m<br>     <b>Aktuální sněhová pokrývka:</b> 70 - 105 cm<br>     <b>Počet km sjezdovek:</b> 60 km<br>     <b>Počet vleků:</b> 21 (9/6/6)<br>     <b>Cena jednodenního skipasu:</b> 50 - 55 €<br>     <b>Web:</b> <a href='https://www.hintertuxergletscher.at/' target='_blank'>https://www.hintertuxergletscher.at/</a>     </div>`)[0];
+            popup_43c7cd62530db7de59c7aeb549072fb3.setContent(html_50f1a55c2439d49f635575c0ae0e4789);
+        
+
+        marker_136bf434799d6004e64f6c818209ccfc.bindPopup(popup_43c7cd62530db7de59c7aeb549072fb3)
+        ;
+
+        
+    
+    
+            var marker_624d314e1609a818ef95339a8ac215d2 = L.marker(
+                [47.005, 11.159],
+                {}
+            ).addTo(map_261add2dcb50b23e0def072b4b038cbc);
+        
+    
+            var icon_f08e7f8d15f5c85ab84b425b6ff0e92b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_624d314e1609a818ef95339a8ac215d2.setIcon(icon_f08e7f8d15f5c85ab84b425b6ff0e92b);
+        
+    
+        var popup_8cb6c7784ee03663901ac9104c2cf84c = L.popup({"maxWidth": 300});
+
+        
+            var html_b3550cb51682a4e3147593c90f5a4928 = $(`<div id="html_b3550cb51682a4e3147593c90f5a4928" style="width: 100.0%; height: 100.0%;">     <b>Stubai Glacier</b><br>     <b>Nadmořská výška:</b> 1 750 - 3 210 m<br>     <b>Aktuální sněhová pokrývka:</b> 70 - 105 cm<br>     <b>Počet km sjezdovek:</b> 65 km<br>     <b>Počet vleků:</b> 26 (7/7/12)<br>     <b>Cena jednodenního skipasu:</b> 50 - 55 €<br>     <b>Web:</b> <a href='https://www.stubaier-gletscher.com/' target='_blank'>https://www.stubaier-gletscher.com/</a>     </div>`)[0];
+            popup_8cb6c7784ee03663901ac9104c2cf84c.setContent(html_b3550cb51682a4e3147593c90f5a4928);
+        
+
+        marker_624d314e1609a818ef95339a8ac215d2.bindPopup(popup_8cb6c7784ee03663901ac9104c2cf84c)
+        ;
+
+        
+    
+    
+            var marker_36836b59ddbe3e41620d83e95dab52b1 = L.marker(
+                [46.979, 10.861],
+                {}
+            ).addTo(map_261add2dcb50b23e0def072b4b038cbc);
+        
+    
+            var icon_58cbf20252b5e3fe068e4a0c83bb21dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_36836b59ddbe3e41620d83e95dab52b1.setIcon(icon_58cbf20252b5e3fe068e4a0c83bb21dc);
+        
+    
+        var popup_9bfd9046002aeeb23d4f771bfe7f5cc4 = L.popup({"maxWidth": 300});
+
+        
+            var html_0d078d6dea75fc548070f878a3f7b9fb = $(`<div id="html_0d078d6dea75fc548070f878a3f7b9fb" style="width: 100.0%; height: 100.0%;">     <b>Pitztal Glacier</b><br>     <b>Nadmořská výška:</b> 1 640 - 3 440 m<br>     <b>Aktuální sněhová pokrývka:</b> 70 - 105 cm<br>     <b>Počet km sjezdovek:</b> 40 km<br>     <b>Počet vleků:</b> 12 (3/4/5)<br>     <b>Cena jednodenního skipasu:</b> 50 - 55 €<br>     <b>Web:</b> <a href='https://www.pitztaler-gletscher.at/' target='_blank'>https://www.pitztaler-gletscher.at/</a>     </div>`)[0];
+            popup_9bfd9046002aeeb23d4f771bfe7f5cc4.setContent(html_0d078d6dea75fc548070f878a3f7b9fb);
+        
+
+        marker_36836b59ddbe3e41620d83e95dab52b1.bindPopup(popup_9bfd9046002aeeb23d4f771bfe7f5cc4)
+        ;
+
+        
+    
+</script>
+</html>

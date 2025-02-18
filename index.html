@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyžařská střediska v Rakousku</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        nav { background: #0073e6; padding: 10px; }
+        nav a { color: white; text-decoration: none; margin: 10px; font-size: 18px; }
+        .content { display: none; padding: 20px; }
+        .active { display: block; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background: #0073e6; color: white; }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <a href="#" onclick="showSection('table')">Tabulka</a>
+        <a href="#" onclick="showSection('map')">Mapa</a>
+    </nav>
+
+    <div id="table" class="content active">
+        <h2>Lyžařská střediska v Rakousku</h2>
+        <table>
+            <tr>
+                <th>Název</th>
+                <th>Výška</th>
+                <th>Sněhová pokrývka</th>
+                <th>Počet km</th>
+                <th>Počet vleků</th>
+                <th>Cena skipasu</th>
+                <th>Web</th>
+            </tr>
+            <tr>
+                <td>Sölden</td>
+                <td>1 350 - 3 340 m</td>
+                <td>33 - 45 cm</td>
+                <td>144 km</td>
+                <td>33 (9/16/8)</td>
+                <td>63 - 67 €</td>
+                <td><a href="https://www.soelden.com/" target="_blank">Odkaz</a></td>
+            </tr>
+            <tr>
+                <td>Ischgl</td>
+                <td>1 377 - 2 872 m</td>
+                <td>70 - 105 cm</td>
+                <td>239 km</td>
+                <td>45 (13/25/7)</td>
+                <td>70 - 75 €</td>
+                <td><a href="https://www.ischgl.com/" target="_blank">Odkaz</a></td>
+            </tr>
+            <!-- Další řádky dle potřeby -->
+        </table>
+    </div>
+
+    <div id="map" class="content">
+        <h2>Mapa lyžařských středisek</h2>
+        <iframe src="map.html" width="100%" height="900px" style="border:none;"></iframe>
+    </div>
+</body>
+</html>
